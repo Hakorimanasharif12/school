@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Popular Courses</title>
+    <style>
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #2c325b;
+}
+
+.popular-courses {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    color: #fff;
+}
+
+.image-container {
+    position: relative;
+    flex: 1;
+}
+
+.child-image {
+    width: 250px; 
+    z-index: 2;
+    position: relative;
+}
+
+.decorative-shape {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 300px;
+    background: linear-gradient(135deg, #FF5E84, #FDCB8C);
+    z-index: 1;
+    border-radius: 40% 60% 60% 40%;
+    transform: rotate(-25deg);
+    animation: moveShape 8s infinite alternate ease-in-out;
+}
+
+@keyframes moveShape {
+    0% {
+        transform: rotate(-25deg) translateX(0px) translateY(0px);
+    }
+    50% {
+        transform: rotate(-15deg) translateX(20px) translateY(-10px);
+    }
+    100% {
+        transform: rotate(-25deg) translateX(-20px) translateY(10px);
+    }
+}
+
+.text-content {
+    flex: 1;
+    padding-left: 50px;
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 15px;
+    border-top: 3px solid #F14E4E;
+    padding-top: 10px;
+}
+
+p {
+    max-width: 400px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.learn-more-link {
+    color: #8E77FF;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+    </style>
+</head>
+<body>
+    <section class="popular-courses">
+        <div class="image-container">
+            <img src="path-to-your-image.jpg" alt="Child with Phone" class="child-image">
+            <div class="decorative-shape"></div>
+        </div>
+        <div class="text-content">
+            <h2>Our Popular Courses</h2>
+            <p>Problems trying to resolve the conflict between the two major realms of Classical physics: Newtonian mechanics</p>
+            <a href="#" class="learn-more-link">Learn More &gt;</a>
+        </div>
+    </section>
+</body>
+</html>

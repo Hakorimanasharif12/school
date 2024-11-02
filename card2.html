@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Card Section</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    /* ... previous CSS remains unchanged ... */
+
+.card-icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.card-icons i {
+  background: white;
+  color: #1C2E56;
+  border-radius: 50%;
+  padding: 10px;
+  font-size: 1.2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.card-icons i:hover {
+  color: white;
+  background: #1C2E56;
+}
+
+  </style>
+  <!-- Link to Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+ 
+    
+    <div class="course1-cards">
+      <div class="card">
+        <div class="card-image">
+          <img src="https://via.placeholder.com/150" alt="Course Image">
+          <span class="badge">Sale</span>
+          <div class="card-icons">
+            <i class="fas fa-heart"></i>
+            <i class="fas fa-shopping-cart"></i>
+            <i class="fas fa-ellipsis-h"></i>
+          </div>
+        </div>
+        <div class="card-content">
+          <h3>Join Us</h3>
+          <p class="rating"><span class="star">⭐</span> 4.9</p>
+          <p class="course-info">2,769 online courses</p>
+          <p class="description">We focus on ergonomics and meeting you...</p>
+          <div class="sales">
+            <span class="sales-count">15 Sales</span>
+            <span class="price"><del>$16.48</del> <strong>$6.48</strong></span>
+          </div>
+          <button class="learn-more">Learn More ➔</button>
+        </div>
+      </div>
+      <!-- Add more cards as needed -->
+    </div>
+  
+</body>
+</html>
